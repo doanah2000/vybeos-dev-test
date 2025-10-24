@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary-darkGreen: #3E3F3E;
+  --color-primary-lightGreen: #B3FF94;
+  --color-primary-green: #193018;
+  --color-primary-timber: #3E3F3E;
+  --color-primary-white: #FFFFFF;
+  --color-primary-frost: #DDE4C3;
+  --color-primary-smoke: #0E0F0E;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

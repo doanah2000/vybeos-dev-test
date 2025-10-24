@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Build Outputs
+.next/
+out/
+build/
+dist/
+
+# Debug
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+#VSCode
+.vscode/
+
+# Public
+public/
+
+# Config
+tsconfig.json
+tailwind.config.ts
