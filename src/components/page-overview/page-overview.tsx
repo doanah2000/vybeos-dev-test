@@ -13,15 +13,15 @@ export default function PageOverview({
 }: PageOverviewProps) {
   return (
     <div
-      className={`flex-col-center mb-16 w-[480px] gap-2 ${className}`.trim()}
+      className={`flex-col-center mb-16 w-full max-w-[480px] gap-2 px-4 ${className}`.trim()}
     >
       <h3
-        className={`${machina.className} text-heading-secondary mb-4 text-white`}
+        className={`${machina.className} text-heading-secondary mb-4 text-center text-white`}
       >
         {title}
       </h3>
       <p
-        className={`${montreal.className} text-body-base overflow-wrap text-center font-normal text-white`}
+        className={`${montreal.className} text-body-base text-center font-normal break-words text-white`}
       >
         {description}
       </p>
