@@ -24,6 +24,79 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Layout utilities */
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Typography utilities - Semantic font sizing */
+  .text-heading-primary {
+    font-size: 2.375rem; /* 38px */
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .text-heading-secondary {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .text-body-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem;
+  }
+  
+  .text-body-sm {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.5rem;
+  }
+  
+  .text-caption {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem;
+  }
+  
+  .text-badge {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* Legacy support - mapped to semantic classes */
+  .text-heading-lg {
+    font-size: 2.375rem; /* 38px */
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  
+  /* Position utilities */
+  .absolute-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .absolute-bottom-right {
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.5rem;
+  }
+  
+  /* Size utilities */
+  .size-badge {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
 .clip-card {
@@ -31,5 +104,12 @@
 }
 
 .clip-container {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 94% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 96% 100%, 0% 100%);
+}
+
+.triangle-inset {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary-lightGreen);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
