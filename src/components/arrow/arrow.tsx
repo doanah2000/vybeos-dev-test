@@ -1,11 +1,13 @@
 interface ArrowProps {
   className?: string;
   direction?: 'right' | 'down';
+  style?: React.CSSProperties;
 }
 
 export default function Arrow({
   className = '',
   direction = 'right',
+  style,
 }: ArrowProps) {
   // Right arrow path: horizontal arrow pointing right
   const rightArrowPath = 'M26 2L48 23L26 44M48 23H4';
@@ -21,6 +23,7 @@ export default function Arrow({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`text-primary-lightGray flex-shrink-0 ${className}`.trim()}
+      style={style}
     >
       <path
         d={direction === 'right' ? rightArrowPath : downArrowPath}

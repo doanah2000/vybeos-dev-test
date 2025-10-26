@@ -47,7 +47,7 @@ export default function CardContainer({
 
   return (
     <div
-      className={`clip-container border-primary-lightGray flex w-fit max-w-full flex-wrap gap-6 overflow-x-auto border bg-[radial-gradient(ellipse_150%_100%_at_bottom_center,var(--color-primary-green)_0%,var(--color-primary-gray)_70%)] px-24 py-8 ${className}`.trim()}
+      className={`clip-container border-primary-lightGray flex w-fit max-w-full flex-wrap gap-6 overflow-x-auto border bg-[radial-gradient(ellipse_150%_100%_at_bottom_center,var(--color-primary-green)_0%,var(--color-primary-gray)_70%)] px-24 py-12 ${className}`.trim()}
     >
       <div
         className="flex w-full flex-col items-center gap-6 md:flex-row md:justify-start md:gap-6"
@@ -65,8 +65,16 @@ export default function CardContainer({
             />
             {index < cards.length - 1 && (
               <>
-                <Arrow direction="down" className="md:hidden" />
-                <Arrow direction="right" className="hidden md:block" />
+                <Arrow
+                  direction="down"
+                  className="card-fade-in md:hidden"
+                  style={{ animationDelay: `${index * 0.15}s` }}
+                />
+                <Arrow
+                  direction="right"
+                  className="card-fade-in hidden md:block"
+                  style={{ animationDelay: `${index * 0.15}s` }}
+                />
               </>
             )}
           </React.Fragment>

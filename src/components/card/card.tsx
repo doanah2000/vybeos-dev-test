@@ -15,9 +15,13 @@ export default function Card({
   index,
   className = '',
 }: CardProps) {
+  // Calculate staggered animation delay based on index
+  const animationDelay = index ? `${(index - 1) * 0.15}s` : '0s';
+
   return (
     <div
-      className={`flex-center border-primary-lightGray relative mx-4 h-[500px] w-[294px] border ${className}`.trim()}
+      className={`card-fade-in flex-center border-primary-lightGray relative mx-4 h-[500px] w-[294px] border ${className}`.trim()}
+      style={{ animationDelay }}
     >
       <div className="triangle-inset absolute-top-left"></div>
       <div className="bg-primary-frost flex-col-center relative h-[472px] w-[270px] gap-2">
