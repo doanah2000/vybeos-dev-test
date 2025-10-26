@@ -10,13 +10,13 @@ export default function PageOverview({
   description,
 }: PageOverviewProps) {
   return (
-    <div className="flex flex-col gap-2 items-center">
-      <h3
-        className={`${machina.className} text-primary-lightGreen text-4xl font-semibold`}
-      >
+    <div className="flex w-[480px] flex-col items-center gap-2">
+      <h3 className={`${machina.className} text-4xl font-semibold text-white`}>
         {title}
       </h3>
-      <p className={`${montreal.className} text-white`}>{description}</p>
+      <p className={`${montreal.className} text-[16px] text-center text-white`}>
+        {description}
+      </p>
     </div>
   );
 }

@@ -9,6 +9,8 @@
   --color-primary-white: #FFFFFF;
   --color-primary-frost: #DDE4C3;
   --color-primary-smoke: #0E0F0E;
+  --color-primary-gray: #1A1A1A;
+  --color-primary-lightGray: #3E3F3E;
   
   /* Font Weights */
   --font-weight-light: 300;
@@ -22,4 +24,12 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.clip-card {
+  clip-path: polygon(0% 6%, 6% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-container {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 94% 100%, 0% 100%);
 }
