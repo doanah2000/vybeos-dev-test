@@ -104,7 +104,15 @@
 }
 
 .clip-container {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 96% 100%, 0% 100%);
+  /* No clip on mobile - vertical layout doesn't need the diagonal cut */
+  clip-path: none;
+}
+
+@media (min-width: 768px) {
+  .clip-container {
+    /* Clip only on desktop - horizontal layout with diagonal bottom-right cut */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 96% 100%, 0% 100%);
+  }
 }
 
 .triangle-inset {

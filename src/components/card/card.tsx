@@ -5,7 +5,6 @@ interface CardProps {
   overviewKeywords: string;
   description: string;
   index?: number;
-  totalCount?: number;
   className?: string;
 }
 
@@ -18,10 +17,10 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`flex-center border-primary-lightGray relative mx-8 h-[500px] w-[294px] border ${className}`.trim()}
+      className={`flex-center border-primary-lightGray relative mx-4 h-[500px] w-[294px] border ${className}`.trim()}
     >
       <div className="triangle-inset absolute-top-left"></div>
-      <div className="bg-primary-frost flex-col-center relative mx-4 h-[472px] w-[270px] gap-2">
+      <div className="bg-primary-frost flex-col-center relative h-[472px] w-[270px] gap-2">
         <div className="bg-primary-smoke clip-card flex-center m-1 h-[254px] w-[254px] p-4">
           <div className="flex-col-center h-[160px] w-[160px] justify-center">
             <p
