@@ -21,7 +21,7 @@ export default function PageOverview({
         {title}
       </h3>
       <p
-        className={`${montreal.className} text-body-base text-center font-normal text-white`}
+        className={`${montreal.className} text-body-base overflow-wrap text-center font-normal text-white`}
       >
         {description}
       </p>

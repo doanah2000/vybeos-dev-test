@@ -104,14 +104,14 @@
 }
 
 .clip-container {
-  /* No clip on mobile - vertical layout doesn't need the diagonal cut */
-  clip-path: none;
+  /* Mobile: subtle clip for vertical layout - reduced vertical cut to prevent elongation */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 94% 100%, 0% 100%);
 }
 
 @media (min-width: 768px) {
   .clip-container {
-    /* Clip only on desktop - horizontal layout with diagonal bottom-right cut */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 96% 100%, 0% 100%);
+    /* Desktop: diagonal bottom-right cut for horizontal layout */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 98% 100%, 0% 100%);
   }
 }
 
