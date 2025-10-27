@@ -20,7 +20,7 @@ export default function Card({
 
   return (
     <div
-      className={`card-fade-in flex-center border-primary-lightGray relative mx-4 h-[500px] w-[294px] border ${className}`.trim()}
+      className={`card-fade-in flex-center border-primary-lightGray max-h-[500px] max-w-[294px] border p-4 ${className}`.trim()}
       style={{ animationDelay }}
     >
       <div className="triangle-inset absolute-top-left"></div>
