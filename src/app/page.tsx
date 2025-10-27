@@ -11,16 +11,16 @@ export default function HomePage() {
         displayTexts.brandMemory.description,
     },
     {
-      overviewGeneral: displayTexts.generateWith.general,
-      overviewKeywords: displayTexts.generateWith.keywords,
+      overviewGeneral: displayTexts.generateWithPrecision.general,
+      overviewKeywords: displayTexts.generateWithPrecision.keywords,
       description:
-        displayTexts.generateWith.description,
+        displayTexts.generateWithPrecision.description,
     },
     {
-      overviewGeneral: displayTexts.learnRefine.general,
-      overviewKeywords: displayTexts.learnRefine.keywords,
+      overviewGeneral: displayTexts.learnRefineSafely.general,
+      overviewKeywords: displayTexts.learnRefineSafely.keywords,
       description:
-        displayTexts.learnRefine.description,
+        displayTexts.learnRefineSafely.description,
     },
   ];
 

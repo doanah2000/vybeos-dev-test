@@ -41,7 +41,7 @@ To run jest tests, run `pnpm jest`
 
 ## Deployment
 
-When code is pushed to the main branch, Vercel will automatically deploy a production build based on the latest code changes. Once the deployment is successful, changes can be viewed at `https://adoan-dev-test.vercel.app`
+When code is pushed to the main branch, Vercel will automatically deploy a production build based on the latest code changes. Once the deployment is successful, changes can be viewed at https://adoan-dev-test.vercel.app
 
 ## Future Considerations
 

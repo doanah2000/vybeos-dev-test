@@ -8,12 +8,12 @@ export const displayTexts = {
     keywords: 'Brand Memory',
     description: 'Upload your site, assets, and product data. VybeOS builds a private brand memory that captures your tone and design DNA. No shared models, no data leaks.',
   },
-  generateWith: {
+  generateWithPrecision: {
     general: 'Generate With',
     keywords: 'Precision',
     description: 'Create complete campaigns in one click. Every line and layout stays true to your brand\'s identity, handcrafted quality, automated delivery.',
   },
-  learnRefine: {
+  learnRefineSafely: {
     general: 'Learn + Refine',
     keywords: 'Safely',
     description: 'Approve, adjust, and publish inside VybeOS. The system learns only from your edits, closing the loop between performance and creative consistency.',

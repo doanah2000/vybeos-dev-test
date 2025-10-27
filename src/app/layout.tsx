@@ -31,7 +31,7 @@ export const montreal = localFont({
     {
       path: '../../public/fonts/NeueMontreal-Medium.woff2',
       weight: '500',
-      style: 'normal',
+      style: 'regular',
     },
   ],
   display: 'swap',
